@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffcccb;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+
+#sim {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#sim:hover {
+    background-color: #45a049;
+}
+
+#nao {
+    background-color: #f44336;
+    color: white;
+    position: fixed;
+}
+
+#presentes-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.presente {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.presente:hover {
+    transform: scale(1.1);
+}
