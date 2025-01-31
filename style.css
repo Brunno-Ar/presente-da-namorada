@@ -56,8 +56,8 @@ button {
 }
 
 .presente {
-    width: 120px;  /* Aumentando o tamanho do presente */
-    height: 120px;
+    width: 127px;  /* Aumentando o tamanho do presente */
+    height: 127px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,16 +66,16 @@ button {
     padding: 10px;
     background-color: #fff5e1; /* Cor de fundo suave */
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
-    transition: transform 0.2s ease-in-out; /* Efeito suave ao passar o mouse */
+    transition: transform 0.3s ease-in-out; /* Efeito suave ao passar o mouse */
 }
 
 .presente:hover {
-    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+    transform: scale(1.2); /* Efeito de zoom ao passar o mouse */
 }
 
 .presente img {
-    width: 100px; /* Ajustando o tamanho da imagem */
-    height: 100px;
+    width: 110px; /* Ajustando o tamanho da imagem */
+    height: 110px;
 }
 
 /* Fundo escuro quando o modal estiver ativo */
