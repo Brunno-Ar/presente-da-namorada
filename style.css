@@ -48,20 +48,32 @@ button {
     position: fixed;
 }
 
-#presentes-container {
+.presentes {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 20px; /* Espaço entre os presentes */
     margin-top: 20px;
 }
 
 .presente {
-    width: 150px;
-    height: 150px;
-    cursor: pointer;
-    transition: transform 0.2s;
+    width: 120px;  /* Aumentando o tamanho do presente */
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #000; /* Cor da borda */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 10px;
+    background-color: #fff5e1; /* Cor de fundo suave */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+    transition: transform 0.2s ease-in-out; /* Efeito suave ao passar o mouse */
 }
 
 .presente:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+.presente img {
+    width: 100px; /* Ajustando o tamanho da imagem */
+    height: 100px;
 }
