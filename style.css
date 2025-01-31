@@ -77,3 +77,75 @@ button {
     width: 100px; /* Ajustando o tamanho da imagem */
     height: 100px;
 }
+
+/* Fundo escuro quando o modal estiver ativo */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Escurecendo o fundo */
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Conteúdo do modal (imagem do presente) */
+.modal-content {
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 80%;
+    animation: zoomIn 0.3s ease-in-out;
+}
+
+/* Imagem do presente no modal */
+.modal-content img {
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+/* Botão de fechar */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #ff5733;
+}
+
+/* Efeito de zoom ao abrir */
+@keyframes zoomIn {
+    from { transform: scale(0.5); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* Fogos de artifício */
+.fogos {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.fogo {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(circle, #ff0, #f00);
+    border-radius: 50%;
+    opacity: 0;
+    animation: explodir 1s ease-out forwards;
+}
+
+@keyframes explodir {
+    0% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0; transform: scale(3); }
+}
